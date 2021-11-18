@@ -64,6 +64,8 @@ def place_bet(account, amount, bet):
     print ('Transaction hash {}'.format(web3.toHex(tx_hash)))
     web3.eth.waitForTransactionReceipt(tx_hash)
     
+# Bet can be 0 or 1 only
+
 place_bet(account_2, 10, 1)   # User 1 Bet
 place_bet(account_3, 10, 0)   # User 2 Bet
 
